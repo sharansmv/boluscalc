@@ -3,10 +3,10 @@ import { insulinTypes } from "@/lib/insulinTypes";
 
 export default function InputSection() {
   let calculator = {
-    currentGlucose: 120,
-    carbs: 30,
-    protein: 20,
-    fat: 10,
+    currentGlucose: 0,
+    carbs: 0,
+    protein: 0,
+    fat: 0,
     iob: 0,
     insulinType: "novolog"
   };
@@ -46,6 +46,7 @@ export default function InputSection() {
               className="block w-full h-10 pl-3 pr-12 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
               min="0"
               step="1"
+              inputMode="numeric"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500 dark:text-gray-400">
               mg/dL
@@ -65,6 +66,7 @@ export default function InputSection() {
               className="block w-full h-10 pl-3 pr-12 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
               min="0"
               step="0.1"
+              inputMode="decimal"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500 dark:text-gray-400">
               units
@@ -104,6 +106,7 @@ export default function InputSection() {
               className="block w-full h-10 pl-3 pr-10 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
               min="0"
               step="1"
+              inputMode="numeric"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500 dark:text-gray-400">
               g
@@ -123,6 +126,7 @@ export default function InputSection() {
               className="block w-full h-10 pl-3 pr-10 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
               min="0"
               step="1"
+              inputMode="numeric"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500 dark:text-gray-400">
               g
@@ -142,6 +146,7 @@ export default function InputSection() {
               className="block w-full h-10 pl-3 pr-10 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800"
               min="0"
               step="1"
+              inputMode="numeric"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500 dark:text-gray-400">
               g

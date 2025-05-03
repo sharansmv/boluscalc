@@ -38,6 +38,7 @@ export default function GeneralSettings() {
               min="70"
               max="180"
               step="1"
+              inputMode="numeric"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500 dark:text-gray-400">
               mg/dL

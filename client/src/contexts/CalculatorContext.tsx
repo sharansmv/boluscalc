@@ -49,10 +49,10 @@ const defaultSettings: Settings = {
 };
 
 const defaultCalculator: Calculator = {
-  currentGlucose: 120,
-  carbs: 30,
-  protein: 20,
-  fat: 10,
+  currentGlucose: 0,
+  carbs: 0,
+  protein: 0,
+  fat: 0,
   iob: 0,
   insulinType: "novolog",
 };

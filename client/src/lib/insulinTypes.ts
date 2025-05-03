@@ -14,6 +14,13 @@ export const insulinTypes: Record<string, InsulinType> = {
     duration: 4,
     preMealTiming: 15
   },
+  novorapid: {
+    name: 'NovoRapid (insulin aspart)',
+    onset: 15,
+    peak: 1,
+    duration: 4,
+    preMealTiming: 15
+  },
   humalog: {
     name: 'Humalog (insulin lispro)',
     onset: 15,
