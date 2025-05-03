@@ -1,0 +1,86 @@
+I want to create an Insulin Bolus Calculator web application on Replit. This application will help people with diabetes calculate their insulin doses based on various factors.
+
+## Core Functionality
+The app should calculate insulin doses based on:
+- Current glucose level vs. target glucose level
+- Carbohydrates, proteins, and fats to be consumed
+- Insulin sensitivity factor
+- Time-based insulin-to-carb ratios (different for each hour of the day)
+- Active insulin on board (IOB)
+- Selected insulin type with appropriate action profiles
+
+The algorithm should implement these formulas:
+- CU = Carbohydrates/[User's Carb Ratio] (not fixed at 10, but based on user settings)
+- FPU = (Proteins * 4.0 + Fats * 9.0)/100
+- CU_perc = CU/(CU + FPU)
+- Correction = (glucose - target)/sensitivity
+- Normal Bolus calculation based on CU_perc values
+- Square Bolus calculation with appropriate timing
+- Pre-meal timing recommendations based on selected insulin type
+
+## User Interface Requirements
+- Clean, minimal, and modern design
+- Mobile-first responsive layout
+- Clear input fields with appropriate units
+- Real-time calculation updates
+- Visual feedback for calculation results
+- Easy navigation between main calculator and settings
+
+## Screens to Include
+1. Main Calculator Screen
+   - Input fields for glucose, carbs, protein, fat
+   - Selector for insulin type
+   - Display for calculated insulin doses
+   - Display for recommended pre-meal timing
+   - Quick access to settings
+
+2. Settings Screen
+   - Input fields for insulin sensitivity factor
+   - Time-based insulin-to-carb ratio editor (24 different hourly settings)
+   - Insulin type management with action profiles
+   - Target glucose settings
+   - Exercise and sickness adjustment settings
+
+3. Calculation Details Screen
+   - Detailed breakdown of the calculation
+   - Formula explanations
+   - Insulin action profile visualization
+
+## Insulin Types Database
+Implement a database of common rapid-acting insulin types with these properties:
+- Onset time (how quickly it starts working)
+- Peak time (when it works the hardest)
+- Duration (how long it stays active)
+- Recommended pre-meal timing (how long before eating to take it)
+
+Include at least these common rapid-acting insulins:
+- NovoRapid/NovoLog (insulin aspart)
+- Humalog (insulin lispro)
+- Apidra (insulin glulisine)
+- Fiasp (faster-acting insulin aspart)
+- Lyumjev (ultra rapid lispro)
+
+## Technical Implementation
+- Use HTML, CSS, and JavaScript
+- Implement responsive design with CSS Grid/Flexbox
+- Store user settings in localStorage
+- Use modern JavaScript features for calculations
+- Implement input validation to prevent errors
+- Create a time-selection interface for hourly carb ratio settings
+
+## Visual Design
+- Clean, minimal interface with adequate whitespace
+- Color scheme using blue tones (similar to the screenshots)
+- Clear typography for readability
+- Visual separation between input and output sections
+- Toggle for dark/light mode
+- Hourly timeline visualization for carb ratio settings
+
+## Additional Features
+- History log of previous calculations
+- Pre-meal timer based on insulin type
+- Export functionality for sharing with healthcare providers
+- Offline functionality
+- Visual graphs for calculated doses and insulin action profiles
+
+Please implement this application with a focus on accuracy, usability, and clean design. The interface should be intuitive enough for users to easily input their data and understand the results. Pay special attention to the hourly carb ratio settings and insulin type selection, as these are critical for accurate dosing calculations.
